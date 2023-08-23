@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simule seu investimento</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simulação de Investimentos com Juros Compostos</h1>
+        <form>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </p>
+            <p>
+                <label for="mensalidade">Valor da mensalidade:</label>
+                <input type="number" id="mensalidade" name="mensalidade" placeholder="R$ Mensalidade" step="0.01" required>
+            </p>
+            <p>
+                <label for="contribuicao">Tempo de contribuição em meses:</label>
+                <input type="number" id="contribuicao" name="contribuicao" placeholder="Tempo de contribuição" required>
+            </p>
+            <button type="button" onclick="calculoDeJuros()">Simular investimento</button>
+            <div id="resultado">
+                <h2>Resultado da Simulação</h2>
+                <p>
+                    Olá <span id="nomeResultado"></span>,
+                    juntando R$<span id="mensalidadeResultado"></span> todo mês, você terá R$<span id="montanteResultado"></span>
+                    em <span id="contribuicaoResultado"></span> meses.
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <script src="/Simulação de investimentos mesma página/app.js"></script>
+</body>
+</html>
